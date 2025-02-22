@@ -55,6 +55,7 @@
 
 .filter-field{
     margin-top: -65px;
+    margin-bottom: 50px;
     .field-wrapper{
         box-shadow: 5px 5px 6px rgba($color: #000000, $alpha: 0.16);
         margin: 0 auto;
@@ -64,13 +65,81 @@
         background-color: #FFFADC;
         padding: 32px 100px 43px;
         border-radius: 62px;
-        
+
         li{
             &:not(:has(a)){
                 font-family:'Brother 1816';
                 font-size: 36px;
                 font-weight: 700;
                 color: #1D1D1B;
+            }
+            a{
+                font-family:'Brother 1816';
+                font-size: 36px;
+                font-weight: 700;
+                color: #FF7300;
+                position: relative;
+                padding: 0 20px;
+
+                &:before{
+                    position: absolute;
+                    content: '';
+                    bottom: -5px;
+                    width: 0%;
+                    height: 5px;
+                    background-color: #FF7300;
+                    left: 0;
+                    transition: all 300ms ease;
+                }
+                &:hover{
+                    text-decoration: none;
+                    &:before{
+                        bottom: -5px;
+                        width: 100%;
+                        height: 5px;
+                        background-color: #FF7300;
+                    }
+                }
+                &.active{
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        bottom: -5px;
+                        width: 120%;
+                        height: 5px;
+                        background-color: #FF7300;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: all 300ms ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.breadcrumbs{
+    .breadcrumbs-wrapper{
+        @include flexbox();
+        li{
+            font-family:'Brother 1816';
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1;
+            margin-right: 11px;
+            a{
+                color: #1D1D1B;
+            }
+            &:not(:last-child){
+                &:after{
+                    margin-left: 11px;
+                    position: relative;
+                    content: '>';
+                    color: #FF7300;
+                }
+            }
+            span{
+                color: #FF7300;
             }
         }
     }

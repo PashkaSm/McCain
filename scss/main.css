@@ -856,6 +856,7 @@ body.search-active #searchform {
 
 .filter-field {
   margin-top: -65px;
+  margin-bottom: 50px;
 }
 .filter-field .field-wrapper {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
@@ -872,6 +873,68 @@ body.search-active #searchform {
   font-size: 36px;
   font-weight: 700;
   color: #1D1D1B;
+}
+.filter-field .field-wrapper li a {
+  font-family: "Brother 1816";
+  font-size: 36px;
+  font-weight: 700;
+  color: #FF7300;
+  position: relative;
+  padding: 0 20px;
+}
+.filter-field .field-wrapper li a:before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  width: 0%;
+  height: 5px;
+  background-color: #FF7300;
+  left: 0;
+  transition: all 300ms ease;
+}
+.filter-field .field-wrapper li a:hover {
+  text-decoration: none;
+}
+.filter-field .field-wrapper li a:hover:before {
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background-color: #FF7300;
+}
+.filter-field .field-wrapper li a.active:before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  width: 120%;
+  height: 5px;
+  background-color: #FF7300;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 300ms ease;
+}
+
+.breadcrumbs .breadcrumbs-wrapper {
+  display: -moz-flex;
+  display: flex;
+}
+.breadcrumbs .breadcrumbs-wrapper li {
+  font-family: "Brother 1816";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 11px;
+}
+.breadcrumbs .breadcrumbs-wrapper li a {
+  color: #1D1D1B;
+}
+.breadcrumbs .breadcrumbs-wrapper li:not(:last-child):after {
+  margin-left: 11px;
+  position: relative;
+  content: ">";
+  color: #FF7300;
+}
+.breadcrumbs .breadcrumbs-wrapper li span {
+  color: #FF7300;
 }
 
 .desctop_hide {
