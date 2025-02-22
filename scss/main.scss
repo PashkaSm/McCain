@@ -1,0 +1,47 @@
+@import '_mixins';
+//web page width
+$row: 1620px;
+$md: 1024px;
+$sm: 768px;
+$xs: 480px;
+//main color
+$a: #FFD750;
+//second color
+$b: #FF7300;
+//link color
+$link: $a;
+// buttons color
+$btn: #FA7303;
+$border: #cccccc;
+$text: #1D1D1B;
+$menu: #0c2d80;
+//social media color
+$facebook: #3b5993;
+$twitter: #55acee;
+$instagram: #181818;
+$linkedin: #0177b5;
+$google_plus: #d94733;
+$pinterest: #bd1e23;
+$youtube: #f80000;
+$vimeo: #1ab7ea;
+@include declare-font('Rooney Pro', 'RooneyPro-Bold', 700);
+@include declare-font('Brother 1816', 'Brother-1816-Bold', 700);
+@include declare-font('Brother 1816', 'Brother-1816-Regular', 400);
+@include declare-font('Brother 1816', 'Brother-1816-Medium', 500);
+@include declare-font('McCain Wedge Brush', 'McCainWedgeBrush-Regular', 400);
+// Defaul fonts
+$regular: 'Brother 1816', Helvetica, Arial, sans-serif;
+//default italic font
+$italic: 'font_italic', Helvetica, Arial, sans-serif;
+//default bold font
+$bold: 'font_bold', Helvetica, Arial, sans-serif;
+/* FONTS
+   ========================================================================== */
+
+/* MAIN  FILES
+   ========================================================================== */
+@import 'components/01_reset';
+@import 'components/02_flexo';
+@import 'components/20_global';
+@import 'components/21_pages';
+@import 'components/99_responsive';

@@ -1,0 +1,38 @@
+
+body.search-active {
+    #searchform {
+        @include transform(translateY(0));
+    }
+}
+
+#searchform {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    padding: 20px;
+    z-index: 99;
+    @include transform(translateY(-100%));
+    @include transition();
+
+    .inner {
+        position: relative;
+
+        .icon-search {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            border: none;
+            background: $b;
+            cursor: pointer;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
