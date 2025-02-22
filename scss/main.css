@@ -800,6 +800,80 @@ body.search-active #searchform {
   font-size: 20px;
 }
 
+.hero-block {
+  background-color: #FF9100;
+  min-height: 762px;
+  width: 100%;
+  padding: 115px 0 182px;
+  overflow: hidden;
+  position: relative;
+}
+.hero-block:before {
+  position: absolute;
+  content: "";
+  background: url("../img/cips_top.png");
+  right: 19px;
+  width: 1199px;
+  height: 1199px;
+  top: -247px;
+}
+.hero-block .row {
+  display: flex;
+  gap: 105px;
+}
+.hero-block .text-wrapper {
+  max-width: 493px;
+}
+.hero-block .text-wrapper .title-two-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  margin-left: 22px;
+}
+.hero-block .text-wrapper .title-two-row .top {
+  font-family: "Rooney Pro";
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #1D1D1B;
+  margin-left: 75px;
+  text-transform: uppercase;
+  margin-bottom: -15px;
+}
+.hero-block .text-wrapper .title-two-row .bottom {
+  font-family: "McCain Wedge Brush";
+  font-size: 120px;
+  color: #FFFADC;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.hero-block .text-wrapper p {
+  text-align: center;
+}
+.hero-block .image {
+  margin-right: -138px;
+}
+
+.filter-field {
+  margin-top: -65px;
+}
+.filter-field .field-wrapper {
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+  max-width: 1081px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFADC;
+  padding: 32px 100px 43px;
+  border-radius: 62px;
+}
+.filter-field .field-wrapper li:not(:has(a)) {
+  font-family: "Brother 1816";
+  font-size: 36px;
+  font-weight: 700;
+  color: #1D1D1B;
+}
+
 .desctop_hide {
   display: none;
 }
