@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Product</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="scss/components/100_lib.css" rel="stylesheet" type="text/css">
+    <link href="https://file.myfontastic.com/UCh5HgwSYvMAtExGhpHLqd/icons.css" rel="stylesheet">
+    <link href="./fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet">
+    <meta name="theme-color" content="#000">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/init.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <form action="/" class="searchform" id="searchform" method="get">
+            <div class="inner">
+                <input type="text" placeholder="Search ..." id="s" name="s" value="" tabindex="-1">
+                <button type="submit" value="Search" id="searchsubmit" class="icon-search" tabindex="-1"><i class="fa fa-search" aria-hidden="true" tabindex="-1"></i></button>
+            </div>
+        </form>
+    </header>
+    <div class="recipes-page">
+        <div class="hero-block">
+            <div class="row">
+                <div class="text-wrapper">
+                    <div class="title-two-row">
+                        <span class="top">Our</span>
+                        <span class="bottom">Recipes</span>
+                    </div>
+                    <p>
+                        Whether you <strong>dip</strong> them, <strong>crisp</strong> them, <strong>salt</strong> them or <strong>steal</strong> them… we have a recipe for you and your family, whoever that may be.
+                    </p>
+                </div>
+                <figure class="image">
+                    <img src="./img/in-top-recepts.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="filter-field">
+            <div class="row">
+                <div class="field-wrapper">
+                    <ul class="filter">
+                        <li>Filter By…</li>
+                        <li><a class="active">TRENDING</a></li>
+                        <li><a>PRODUCT</a></li>
+                        <li><a>DIET</a></li>
+                    </ul>
+                    <div class="filter-items">
+                        <ul id="list-1">
+                            <li><a href="">Fakeaway</a></li>
+                            <li><a href="">Air Fryer</a></li>
+                            <li><a href="">Family Dinner</a></li>
+                            <li><a href="">Traybake </a></li>
+                        </ul>
+                        <ul id="list-2">
+                            <li><a href="">Chips</a></li>
+                            <li><a href="">Fries</a></li>
+                            <li><a href="">Jacket Potatoes</a></li>
+                            <li><a href="">Wedges</a></li>
+                            <li><a href="">Smiles</a></li>
+                            <li><a href="">Roast Potatoes</a></li>
+                            <li><a href="">Hash Browns</a></li>
+                            <li><a href="">Hasslebacks </a></li>
+                        </ul>
+                        <ul id="list-3">
+                            <li><a href="">Vegetarian</a></li>
+                            <li><a href="">Vegan</a></li>
+                            <li><a href="">Gluten Free </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="row">
+                <ul class="breadcrumbs-wrapper">
+                    <li><a href="/">Homepage</a></li>
+                    <li><span href="#">Recipes</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cards-with-hover">
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/1.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Cheeseburger chip cup</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/McCain_LoadedHasselbackPotatoNachos_Image_3.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Loaded Hasslebacks</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/Group 4801.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>LOADED Chicken caesar FRIES</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/Group 4802.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Lemon Pepper Fries</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/Group 4803.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Garlic Parmesan Chicken</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/McCain_FajitaFrenchFrySkewers_Image_1.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Fajita French Fry skewer</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/McCain_ChilliJamChickenTenders_Image_3.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Chili Jam chicken Tenders</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/McCain_ChilliJamChickenTenders_Image_3.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Sticky Sesame Chicken</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/Group 4806.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Tex MEX FULLY LOADED FRIES</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/Group 4807.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Spicy Tuna & Avocado Jacket</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/Sweet Potato Fries tray bake.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Sweet Potato & Chicken Tray Bake</h3>
+                </div>
+                <div class="card">
+                    <div class="wrapper-image">
+                        <figure>
+                            <img src="./img/recepts/Asian Slaw Chicken Kebabs with Sweet Chilli Sticky Fries.png" alt="">
+                        </figure>
+                        <div class="hover-content">
+                            <p>Sweet and salty, the perfect fakeaway to curb the craving.</p>
+                            <div class="time-cook">
+                                <figure>
+                                    <img src="./img/clock.png" alt="">
+                                </figure>
+                                <span class="time">20 mins</span>
+                                <figure>
+                                    <img src="./img/medium.png" alt="">
+                                </figure>
+                            </div>
+                            <a href="#" class="btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <h3>Roasted Kebabs with Sticky Chili Fries</h3>
+                </div>
+            </div>
+            <div class="button-center">
+                <div class="btn">LOAD MORE</div>
+            </div>
+        </div>
+        <div class="inspired">
+            <figure class="decore-right">
+                <img src="./img/Group_mccain_global_potato_print_straight_chip_01_orange_light.png" alt="">
+            </figure>
+            <div class="row">
+                <div class="title-top-bottom">
+                    <div class="top">INSPIRED</div>
+                    <div class="button">BY YOU...</div>
+                </div>
+                <div class="custom-swiper">
+                    <div class="swiper inspired-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./img/inst.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./img/inst1.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./img/inst2.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./img/inst.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./img/inst1.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./img/inst2.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./img/inst.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation-custom">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="mobile_menu_container desctop_hide cfx">
+            <div class="flex logo-language">
+                <a class="logo" href="#">
+                    <img src="./img/logo.png">
+                </a>
+                <div class="language">
+                    <a href="#">ENG</a> | <a href="#">한국어</a>
+                </div>
+            </div>
+            <form action="/" class="searchformsub" id="searchformsub" method="get">
+                <div class="inner">
+                    <input type="text" placeholder="SEARCH" id="s" name="s" value="">
+                    <button type="submit" value="Search" id="searchsubmit" class="icon-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </form>
+            <nav class="mobile_nav">
+                <ul class="level_a">
+                    <li><a href="#">HOME</a></li>
+                    <li class="menu-item-children"><a href="#">products</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Mccain triplE Cooked</a></li>
+                            <li><a href="#">Mccain lighter homechips</a></li>
+                            <li><a href="#">Mccain STYLE BISTRO</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="#">Recipes</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Falafel minimasmer</a></li>
+                            <li><a href="#">Loaded Sweet Potato Fries and Pumpkin Fries</a></li>
+                            <li><a href="#">Mccain STYLE BISTRO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">Food services</a></li>
+                    <li><a href="#">Store locator</a></li>
+                    <li><a href="#">About McCain</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="s-link">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook-square"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
