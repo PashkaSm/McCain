@@ -46,17 +46,14 @@ $(document).ready(function () {
         centeredSlides: true, 
         loop:true,
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            // when window width is >= 480px
             480: {
                 slidesPerView: 2,
                 spaceBetween: 30
             },
-            // when window width is >= 640px
             768: {
                 slidesPerView: 3,
                 spaceBetween: 0
@@ -71,25 +68,30 @@ $(document).ready(function () {
             clickable: true,
         },
     });
+    new Swiper(".product-photo", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        centeredSlides: true, 
+        loop:true,
+     
+        navigation: {
+            nextEl: ".swiper-navigation-custom .swiper-button-next",
+            prevEl: ".swiper-navigation-custom .swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-navigation-custom .swiper-pagination",
+            clickable: true,
+        },
+    });
     $(".filter-items ul").hide();
 
-    // Додаємо подію hover на посилання в .filter
     $(".filter a").click(function () {
-        // let index = $(this).parent().index();
-        // $(".filter-items ul").slideUp('slow');
-        // $("#list-" + index).slideToggle('slow');
         let index = $(this).parent().index();
-
-        // Закриваємо всі списки
         $(".filter-items ul").slideUp('slow');
-
-        // Перевіряємо, чи вже активний список
         let list = $("#list-" + index);
         if (!list.is(":visible")) {
-            list.slideDown('slow'); // Відкриваємо, якщо не активний
+            list.slideDown('slow'); 
         }
-
-        // Перемикаємо клас "active" на кнопках
         $(".filter a").removeClass("active");
         $(this).toggleClass("active");
     },
