@@ -75,11 +75,41 @@ $(document).ready(function () {
         loop:true,
      
         navigation: {
-            nextEl: ".swiper-navigation-custom .swiper-button-next",
-            prevEl: ".swiper-navigation-custom .swiper-button-prev",
+            nextEl: ".slider-text .swiper-navigation-custom .swiper-button-next",
+            prevEl: ".slider-text .swiper-navigation-custom .swiper-button-prev",
         },
         pagination: {
-            el: ".swiper-navigation-custom .swiper-pagination",
+            el: ".slider-text .swiper-navigation-custom .swiper-pagination",
+            clickable: true,
+        },
+    });
+    new Swiper(".product-photo-left", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        centeredSlides: true, 
+        loop:true,
+     
+        navigation: {
+            nextEl: ".two-swiper .left .swiper-navigation-custom .swiper-button-next",
+            prevEl: ".two-swiper .left .swiper-navigation-custom .swiper-button-prev",
+        },
+        pagination: {
+            el: ".two-swiper .left .swiper-navigation-custom .swiper-pagination",
+            clickable: true,
+        },
+    });
+    new Swiper(".product-photo-right", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        centeredSlides: true, 
+        loop:true,
+     
+        navigation: {
+            nextEl: ".two-swiper .right .swiper-navigation-custom .swiper-button-next",
+            prevEl: ".two-swiper .right .swiper-navigation-custom .swiper-button-prev",
+        },
+        pagination: {
+            el: ".two-swiper .right .swiper-navigation-custom .swiper-pagination",
             clickable: true,
         },
     });
