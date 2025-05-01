@@ -17,40 +17,320 @@
 </head>
 
 <body>
-        <header class="header">
-            <form action="/" class="searchform" id="searchform" method="get">
-                <div class="inner">
-                    <input type="text" placeholder="Search ..." id="s" name="s" value="" tabindex="-1">
-                    <button type="submit" value="Search" id="searchsubmit" class="icon-search" tabindex="-1"><i class="fa fa-search" aria-hidden="true" tabindex="-1"></i></button>
-                </div>
-            </form>
-        </header>
-        <div class="hero-block">
+    <header class="header">
+        <form action="/" class="searchform" id="searchform" method="get">
+            <div class="inner">
+                <input type="text" placeholder="Search ..." id="s" name="s" value="" tabindex="-1">
+                <button type="submit" value="Search" id="searchsubmit" class="icon-search" tabindex="-1"><i class="fa fa-search" aria-hidden="true" tabindex="-1"></i></button>
+            </div>
+        </form>
+    </header>
+    <div class="product-page">
+       
+        <div class="anchor-block">
             <div class="row">
-                <div class="text-wrapper">
-                    <div class="title-two-row">
-                        <span class="top">Our</span>
-                        <span class="bottom">Products</span>
-                    </div>
-                    <p>
-                        Chips, Fries, Wedges, Roasts & more! Browse our range of products to get that homemade tast without the fuss. Products both frozen and chilled available in major supermarkets.
-                    </p>
+                <div class="field-wrapper">
+                    <ul class="filter">
+                        <li><a class="active">Cooking Instructions </a></li>
+                        <li><a >Nutritional information</a></li>
+                    </ul>
                 </div>
-                <figure class="image">
-                    <img src="../img/Group 4793.png" alt="">
-                </figure>
             </div>
         </div>
-        <div class="filter-field">
+        <div class="breadcrumbs">
             <div class="row">
-                <ul class="field-wrapper">
-                    <li>Filter By…</li>
-                    <li><a href="">RANGE</a></li>
-                    <li><a href="">RETAILER</a></li>
-                    <li><a href="">TYPE</a></li>
+                <ul class="breadcrumbs-wrapper">
+                    <li><a href="/">Homepage</a></li>
+                    <li><a href="/products.html">Products </a></li>
+                    <li><span href="#">Chips and Chatter</span></li>
                 </ul>
             </div>
         </div>
+        <div class="slider-text wave light-amber">
+            <div class="row wrapper">
+                <div class="slider-wrapper-product">
+                    <div class="custom-swiper">
+                        <div class="swiper product-photo">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/FishChipsSq.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/FishChipsSq.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/FishChipsSq.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/FishChipsSq.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-navigation-custom">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="text-content">
+                        <p>Want the taste of homemade cooking without the fuss? Look no further than our Home Chips. We pride ourselves in making the best oven chips in the UK and these McCain chips are no exception.</p>
+                        <p>Using the very best potatoes and a unique crunchy coating, McCain Home Chips are perfectly crispy on the outside and fluffy on the inside, so you can enjoy your favourite potato side at home. </p>
+                        <p>Simply pop these frozen chips in the oven or in an air fryer for even quicker results and enjoy the nations favourite chip.</p>
+                    </div>
+                    <div class="chips-block">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="text">
+                            <div class="top">
+                                WE’RE THE NATIONS
+                            </div>
+                            <div class="bottom">
+                                FAVOURITE CHIP*
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="addition-info">
+                        <p>* see substantiation <strong>here</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='cooking-instructions' class="cooking-instructions wave light">
+            <div class="row">
+                <h2>Cooking Instructions</h2>
+                <div class="instructions-items">
+                    <div class="instructions-item">
+                        <div class="top-row">
+                            <figure>
+                                <img src="./img/icon/air-fryer.png" alt="">
+                            </figure>
+                            <h3>
+                                Air fryer
+                            </h3>
+                        </div>
+                        <div class="instructions-text">
+                            <p>1. Preheat the air fryer to 200°C.</p>
+                            <p>2. Place the chips in the basket, shake half-way through cooking. Cook until they’re lovely, crisp and light golden.</p>
+                            <p>Cook times below based on the power output of the air fryer.</p>
+                            <p>Cook times may vary in different models. Adjust cooking time accordingly.</p>
+                        </div>
+                        <table class="custom-table">
+                            <tr>
+                                <td>2000W</td>
+                                <td>1700W</td>
+                                <td>1400W</td>
+                            </tr>
+                            <tr>
+                                <td>15 Minutes</td>
+                                <td>15 Minutes</td>
+                                <td>20 Minutes</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="instructions-item">
+                        <div class="top-row">
+                            <figure>
+                                <img src="./img/icon/air-fryer.png" alt="">
+                            </figure>
+                            <h3>
+                                OVEN
+                            </h3>
+                        </div>
+                        <div class="instructions-text">
+                            <p>1. Preheat the oven to 210°C Fan/ Gas Mark 8. </p>
+                            <p>2. Bake for 24 – 26 minutes.</p>
+                            <p>For best results turn every now and again, until crisp and golden.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <h2>FUTURE PROOF STATUS STRIP</h2>
+            </div>
+        </div>
+        <div class="ingredients wave orange">
+            <div class="row ingredients-wrapper">
+                <div class="left">
+                    <div class="top-text">
+                        <h3>INGREDIENTS</h3>
+                        <p>Potatoes (89%), Vegetable Oils (Rapeseed, Sunflower) – in varying proportions, Batter (Flour (WHEAT (with Calcium, Iron, Niacin, Thiamin), Rice, Broad Bean), Dextrin, Starch (WHEAT, Potato), Vegetable Fibre, Turmeric Extract, Colour (Paprika Extract)), Salt.</p>
+                        <p><u><strong>See allergens in BOLD.</strong> </u></p>
+                    </div>
+                    <div class="statistic">
+                        <div class="item">
+                            <div class="top">
+                                <div class="top-cat">ENERGY</div>
+                                <div class="cat">kJ/kcal</div>
+                                <div class="number">931/222</div>
+                            </div>
+                            <div class="bottom">
+                                11%
+                            </div>
+                        </div>
+                        <div class="item orange">
+                            <div class="top">
+                                <div class="top-cat">MED</div>
+                                <div class="cat">FAT</div>
+                                <div class="number">7.9g</div>
+                            </div>
+                            <div class="bottom">
+                                11%
+                            </div>
+                        </div>
+                        <div class="item green">
+                            <div class="top">
+                                <div class="top-cat">LOW</div>
+                                <div class="cat">SATURATES</div>
+                                <div class="number">1.0g</div>
+                            </div>
+                            <div class="bottom">
+                                5%
+                            </div>
+                        </div>
+                        <div class="item green">
+                            <div class="top">
+                                <div class="top-cat">LOW</div>
+                                <div class="cat">SUGARS</div>
+                                <div class="number">0.6g</div>
+                            </div>
+                            <div class="bottom">
+                                &lt;1%
+                            </div>
+                        </div>
+                        <div class="item green">
+                            <div class="top">
+                                <div class="top-cat">LOW</div>
+                                <div class="cat">SALT</div>
+                                <div class="number">0.29g</div>
+                            </div>
+                            <div class="bottom">
+                                5%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-text">
+                        <p><strong> % of the reference intake per 110g serving Oven Baked</strong></p>
+                        <p><strong> Typical values Oven Baked per 100g: Energy 846kJ/202kcal</strong></p>
+                        <p>Want to know more about traffic light labelling, then click here</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Nutritional Information</h3>
+                    <table class="nutrition-table">
+                        <thead>
+                            <tr>
+                                <th>NUTRITION</th>
+                                <th>PER 100G FROZEN</th>
+                                <th>PER 100G OVEN BAKED</th>
+                                <th>PER 100G AIR FRYER</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Energy (kJ)</td><td>599</td><td>846</td><td>924</td></tr>
+                            <tr><td>Energy (kcal)</td><td>143</td><td>202</td><td>220</td></tr>
+                            <tr><td>Fat</td><td>5.0g</td><td>7.2g</td><td>7.8g</td></tr>
+                            <tr class="sub"><td>Of which Saturates</td><td>0.6g</td><td>0.9g</td><td>0.9g</td></tr>
+                            <tr><td>Carbohydrates</td><td>21g</td><td>30g</td><td>33g</td></tr>
+                            <tr class="sub"><td>Of which Sugars</td><td>0.5g</td><td>0.5g</td><td>0.5g</td></tr>
+                            <tr><td>Fibre</td><td>1.8g</td><td>2.7g</td><td>3.2g</td></tr>
+                            <tr><td>Protein</td><td>2.3g</td><td>3.2g</td><td>3.0g</td></tr>
+                            <tr><td>Salt</td><td>0.19g</td><td>0.27g</td><td>0.30g</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="bottom-text">When you cook the product in the oven, moisture is released which concentrates the other nutrients such as fat, protein, carbohydrates, and calories. This is why there is a difference in the calories from frozen to cooked.</p>
+                </div>
+                <h2>FUTURE PROOF STATUS STRIP</h2>
+                <figure class="fi">
+                    <img src="./img/fi.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="two-swiper wave amber">
+            <div class="row wrapper">
+                <figure class="decore-right">
+                    <img src="./img/Group_mccain_global_potato_print_straight_chip_01_orange_light.png" alt="">
+                </figure>
+                <div class="left">
+                    <h3>YOU MIGHT</h3>
+                    <h2>HOME CHIP RECIPES</h2>
+                    <div class="custom-swiper">
+                        <div class="swiper product-photo-left">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/FishChipsSq.png" alt="">
+                                    </figure>
+                                    <h3>Sticky Sesame Chicken</h3>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/FishChipsSq.png" alt="">
+                                    </figure>
+                                    <h3>Sticky Sesame Chicken</h3>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/FishChipsSq.png" alt="">
+                                    </figure>
+                                    <h3>Sticky Sesame Chicken</h3>
+
+                                </div>
+                             
+                            </div>
+                        </div>
+                        <div class="swiper-navigation-custom">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>DISCOVER</h3>
+                    <h2>ALSO Like</h2>
+                    <div class="custom-swiper">
+                        <div class="swiper product-photo-right">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/5010228006970 AIR FRYER FRENCH FRIES 750g Poly copy.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/5010228006970 AIR FRYER FRENCH FRIES 750g Poly copy.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="./img/product/5010228006970 AIR FRYER FRENCH FRIES 750g Poly copy.png" alt="">
+                                    </figure>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="swiper-navigation-custom">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="mobile_menu_container desctop_hide cfx">
             <div class="flex logo-language">
@@ -99,5 +379,4 @@
         </div>
     </footer>
 </body>
-
 </html>

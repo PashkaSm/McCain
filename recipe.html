@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Product</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="scss/components/100_lib.css" rel="stylesheet" type="text/css">
+    <link href="https://file.myfontastic.com/UCh5HgwSYvMAtExGhpHLqd/icons.css" rel="stylesheet">
+    <link href="./fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet">
+    <meta name="theme-color" content="#000">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/init.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <form action="/" class="searchform" id="searchform" method="get">
+            <div class="inner">
+                <input type="text" placeholder="Search ..." id="s" name="s" value="" tabindex="-1">
+                <button type="submit" value="Search" id="searchsubmit" class="icon-search" tabindex="-1"><i class="fa fa-search" aria-hidden="true" tabindex="-1"></i></button>
+            </div>
+        </form>
+    </header>
+    <div class="recipe-page">
+        <div class="hero-block">
+            <div class="row">
+                <div class="text-wrapper">
+                    <div class="title-two-row">
+                        <span class="top">Our</span>
+                        <span class="bottom">Recipes</span>
+                    </div>
+                    <p>
+                        Whether you <strong>dip</strong> them, <strong>crisp</strong> them, <strong>salt</strong> them or <strong>steal</strong> them… we have a recipe for you and your family, whoever that may be.
+                    </p>
+                </div>
+                <figure class="image">
+                    <img src="./img/in-top-recepts.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="filter-field">
+            <div class="row">
+                <div class="field-wrapper">
+                    <ul class="filter">
+                        <li><a class="active">INGREDIENTS</a></li>
+                        <li><a>METHOD</a></li>
+                        <li><a>Watch recipe</a></li>
+                    </ul>
+                    <!-- <div class="filter-items">
+                        <ul id="list-1">
+                            <li><a href="">Fakeaway</a></li>
+                            <li><a href="">Air Fryer</a></li>
+                            <li><a href="">Family Dinner</a></li>
+                            <li><a href="">Traybake </a></li>
+                        </ul>
+                        <ul id="list-2">
+                            <li><a href="">Chips</a></li>
+                            <li><a href="">Fries</a></li>
+                            <li><a href="">Jacket Potatoes</a></li>
+                            <li><a href="">Wedges</a></li>
+                            <li><a href="">Smiles</a></li>
+                            <li><a href="">Roast Potatoes</a></li>
+                            <li><a href="">Hash Browns</a></li>
+                            <li><a href="">Hasslebacks </a></li>
+                        </ul>
+                        <ul id="list-3">
+                            <li><a href="">Vegetarian</a></li>
+                            <li><a href="">Vegan</a></li>
+                            <li><a href="">Gluten Free </a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="row">
+                <ul class="breadcrumbs-wrapper">
+                    <li><a href="/">Homepage</a></li>
+                    <li><a href="/recipes.html">Recipes</a></li>
+                    <li><span href="#">Fajita French Fry Skewers</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <div class="row">
+                <p>
+                    These Fajita French Fry Skewers are the perfect combination of crispy McCain Crispy French Fries, fajita chicken, peppers, onions, and gooey mozzarella—topped with enchilada sauce for that extra burst of flavour. Bake it all together for a golden, cheesy masterpiece that’s sure to be a hit with the whole family!
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="mobile_menu_container desctop_hide cfx">
+            <div class="flex logo-language">
+                <a class="logo" href="#">
+                    <img src="./img/logo.png">
+                </a>
+                <div class="language">
+                    <a href="#">ENG</a> | <a href="#">한국어</a>
+                </div>
+            </div>
+            <form action="/" class="searchformsub" id="searchformsub" method="get">
+                <div class="inner">
+                    <input type="text" placeholder="SEARCH" id="s" name="s" value="">
+                    <button type="submit" value="Search" id="searchsubmit" class="icon-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </form>
+            <nav class="mobile_nav">
+                <ul class="level_a">
+                    <li><a href="#">HOME</a></li>
+                    <li class="menu-item-children"><a href="#">products</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Mccain triplE Cooked</a></li>
+                            <li><a href="#">Mccain lighter homechips</a></li>
+                            <li><a href="#">Mccain STYLE BISTRO</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="#">Recipes</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Falafel minimasmer</a></li>
+                            <li><a href="#">Loaded Sweet Potato Fries and Pumpkin Fries</a></li>
+                            <li><a href="#">Mccain STYLE BISTRO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">Food services</a></li>
+                    <li><a href="#">Store locator</a></li>
+                    <li><a href="#">About McCain</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="s-link">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook-square"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
